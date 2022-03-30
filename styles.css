@@ -203,14 +203,15 @@ Wikipedia
     margin-bottom: 2rem;
 }
 
-.msg{
+.msg {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pawel{
-    text-decoration: none;
-    color: var(--primary-600);
+.credit {
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
 }
 
 .form {
@@ -246,6 +247,7 @@ Wikipedia
     cursor: pointer;
 }
 .submit-btn:hover {
+    border-radius: var(--borderRadius);
     transform: scale(0.9);
     color: var(--yellow);
 }
@@ -278,7 +280,6 @@ Wikipedia
     transition: var(--transition);
     /* color: var(--white); */
     color: var(--grey-400);
-
 }
 
 .articles a:hover {
@@ -299,8 +300,15 @@ Wikipedia
         max-width: 600px;
     }
 }
+
 @media screen and (min-width: 992px) {
     .articles {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .form-input {
+        max-width: 10rem;
     }
 }

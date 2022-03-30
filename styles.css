@@ -203,6 +203,16 @@ Wikipedia
     margin-bottom: 2rem;
 }
 
+.msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pawel{
+    text-decoration: none;
+    color: var(--primary-600);
+}
+
 .form {
     background: var(--yellow);
     /* background: #ffffff; */

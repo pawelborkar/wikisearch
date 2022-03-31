@@ -40,6 +40,7 @@ html {
     --green-dark: #0f5132;
     --yellow: #ffff48;
     --salmon: #fa8072c4;
+    --grey: #808080;
 
     /* fonts  */
     --small-text: 0.875rem;
@@ -235,6 +236,10 @@ Wikipedia
     border-top-left-radius: var(--borderRadius);
     border-bottom-left-radius: var(--borderRadius);
 }
+.form-input:focus {
+    transform: scale(0.95);
+    transition: 1s transform ease-in-out;
+}
 .submit-btn {
     border: 1px solid var(--primary-500);
     border-left: transparent;
@@ -269,23 +274,25 @@ Wikipedia
 
 .articles a {
     display: block;
-    /* background: var(--grey-100); */
     background: rgba(78, 76, 76, 0.034);
     color: var(--textColor);
     padding: 1.5rem 2rem;
     border-radius: var(--borderRadius);
     transition: var(--transition);
 }
-.articles p {
-    transition: var(--transition);
-    /* color: var(--white); */
-    color: var(--grey-400);
-}
 
 .articles a:hover {
+    transform: scale(1.1);
     background: var(--primary-500);
-
     color: var(--yellow);
+    -moz-box-shadow: 0px 20px 30px var(--grey);
+    -webkit-box-shadow: 0px 20px 30px var(--grey);
+    box-shadow: 0px 20px 30px var(--grey);
+}
+
+.articles p {
+    transition: var(--transition);
+    color: var(--grey-400);
 }
 
 .articles p:hover {

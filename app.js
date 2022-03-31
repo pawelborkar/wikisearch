@@ -46,9 +46,9 @@ const renderResults = (list) => {
         <p>
         ${snippet}
         </p>
-        <p>
-        Total word counts: ${wordcount}
-        </p>
+        <span>
+        ${Math.ceil(wordcount / 238)} minutes read
+        </span>
         </a>`
 
     }).join('')

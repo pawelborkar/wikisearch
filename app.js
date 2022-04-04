@@ -37,10 +37,7 @@ const fetchResults = async (searchValue) => {
 const renderResults = (list) => {
 
     const CardList = list.map(item => {
-        console.log(list);
         const { title, snippet, wordcount, pageid } = item;
-        console.log(pageid);
-
         return `<a href=http://en.wikipedia.org/?curid=${pageid}>
         <h2>${title}</h2>
         <p>
@@ -52,6 +49,7 @@ const renderResults = (list) => {
         </a>`
 
     }).join('')
+
     resultDOM.innerHTML = `<div class='articles'>
     ${CardList}
     </div>`
